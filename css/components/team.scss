@@ -1,0 +1,32 @@
+.team-section {
+  
+
+  .team-photo {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .team-background {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    margin-top: 25px;
+    p {
+      font-size: 15px;
+
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 20px;
+      }
+
+      @media (min-width: $breakpoint-desktop) {
+        font-size: 25px;
+      }
+    }
+  }
+}

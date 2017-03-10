@@ -1,3 +1,174 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
+.green-text {
+  color: #1A7A67; }
+
+.red-text {
+  color: #BE1818; }
+
+.yellow-text {
+  color: #E2A02D; }
+
+body {
+  font-family: 'Lato', "canada-type-gibson",sans-serif;
+  background: #FFFFFF; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body p {
+    margin: 0;
+    line-height: 1.2; }
+
+.yellow-border-section {
+  background: #E2A02D;
+  width: 100%;
+  margin-top: -5px; }
+  .yellow-border-section .white-background {
+    background: #FFFFFF;
+    margin: 0 15px; }
+    @media (min-width: 768px) {
+      .yellow-border-section .white-background {
+        margin: 0 20px; } }
+    @media (min-width: 1100px) {
+      .yellow-border-section .white-background {
+        margin: 0 30px; } }
+
+@media (min-width: 768px) {
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 100; } }
+.navigation .navgiation-links {
+  padding: 0;
+  text-align: center;
+  margin: 15px auto; }
+  .navigation .navgiation-links .navigation-link a {
+    font-size: 25px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none; }
+    .navigation .navgiation-links .navigation-link a:hover {
+      color: #1A7A67; }
+  .navigation .navgiation-links .navigation-link.active a {
+    color: #E2A02D; }
+  .navigation .navgiation-links .navigation-link.logo-link {
+    width: 150px; }
+    .navigation .navgiation-links .navigation-link.logo-link img {
+      width: 100%; }
+  @media (min-width: 768px) {
+    .navigation .navgiation-links .navigation-link {
+      display: inline-block;
+      padding: 0 7.5px;
+      vertical-align: middle; }
+      .navigation .navgiation-links .navigation-link a {
+        font-size: 22px; }
+    .navigation .navgiation-links .navigation-link.logo-link {
+      width: 100px; }
+      .navigation .navgiation-links .navigation-link.logo-link img {
+        width: 100%; } }
+  @media (min-width: 1100px) {
+    .navigation .navgiation-links .navigation-link {
+      padding: 0 15px; }
+      .navigation .navgiation-links .navigation-link a {
+        font-size: 32px; }
+    .navigation .navgiation-links .navigation-link.logo-link {
+      width: 150px; } }
+
+.landing {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .landing {
+      margin-top: 140px; } }
+  @media (min-width: 1100px) {
+    .landing {
+      margin-top: 190px; } }
+  .landing h1 {
+    font-size: 50px;
+    color: #E2A02D; }
+    @media (min-width: 768px) {
+      .landing h1 {
+        font-size: 60px; } }
+    @media (min-width: 1100px) {
+      .landing h1 {
+        font-size: 80px; } }
+  .landing .landing-content {
+    position: relative; }
+    .landing .landing-content .landing-image {
+      width: 100%; }
+    .landing .landing-content .landing-hours {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 15px 0; }
+      .landing .landing-content .landing-hours h4 {
+        font-size: 20px;
+        font-weight: 300; }
+        @media (min-width: 768px) {
+          .landing .landing-content .landing-hours h4 {
+            font-size: 30px; } }
+        @media (min-width: 1100px) {
+          .landing .landing-content .landing-hours h4 {
+            font-size: 35px; } }
+
+.menus-section {
+  text-align: center;
+  padding: 20px 0; }
+  .menus-section h3, .menus-section a {
+    text-transform: uppercase; }
+  .menus-section h3 {
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 300; }
+  .menus-section a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    display: block;
+    margin-top: 15px; }
+  @media (min-width: 768px) {
+    .menus-section {
+      padding: 40px 0; }
+      .menus-section h3 {
+        font-size: 35px; }
+      .menus-section a {
+        font-size: 30px;
+        margin-top: 20px; } }
+  @media (min-width: 1100px) {
+    .menus-section h3 {
+      font-size: 45px; }
+    .menus-section a {
+      font-size: 40px; } }
+  .menus-section .menu-photos {
+    margin-top: 25px; }
+    @media (min-width: 768px) {
+      .menus-section .menu-photos {
+        margin-top: 35px; } }
+    .menus-section .menu-photos img {
+      width: 33.3333333333333%;
+      display: inline; }
+
+.team-section .team-photo {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%; }
+  .team-section .team-photo img {
+    width: 100%; }
+.team-section .team-background {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+  margin-top: 25px; }
+  .team-section .team-background p {
+    font-size: 15px; }
+    @media (min-width: 768px) {
+      .team-section .team-background p {
+        font-size: 20px; } }
+    @media (min-width: 1100px) {
+      .team-section .team-background p {
+        font-size: 25px; } }
 
 /*# sourceMappingURL=main.css.map */

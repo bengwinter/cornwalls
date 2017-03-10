@@ -1,0 +1,54 @@
+.landing {
+  text-align: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: 140px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 190px;
+  }
+
+  h1 {
+    font-size: 50px;
+    color: $yellow;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 60px;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 80px;
+    }
+  }
+  .landing-content {
+    position: relative;
+
+    .landing-image {
+      width: 100%;
+    }
+
+    .landing-hours {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, .7);
+      padding: 15px 0;
+
+
+      h4 {
+        font-size: 20px;
+        font-weight: 300;
+        @media (min-width: $breakpoint-tablet) {
+          font-size: 30px;
+        }
+        @media (min-width: $breakpoint-desktop) {
+          font-size: 35px;
+        } 
+      }
+
+    }
+
+  }
+  
+
+}

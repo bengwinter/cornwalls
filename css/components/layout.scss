@@ -1,0 +1,35 @@
+body {
+  font-family: 'Lato', "canada-type-gibson",sans-serif;
+  background: $white;
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    line-height: 1.2;
+  }
+
+}
+
+.yellow-border-section {
+  background: $yellow;
+  width: 100%;
+  margin-top: -5px;
+
+  .white-background {
+    background: $white;
+    margin: 0 15px;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin: 0 20px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      margin: 0 30px;
+    }
+
+  }
+
+
+}
+
+
+

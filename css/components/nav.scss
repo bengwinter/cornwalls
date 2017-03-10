@@ -1,0 +1,80 @@
+.navigation {
+  @media (min-width: $breakpoint-tablet) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+    z-index: 100;
+  }
+
+  .navgiation-links {
+    padding: 0;
+    text-align: center;
+    margin: 15px auto;
+
+    .navigation-link {
+      a {
+        font-size: 25px;
+        color: $black;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+
+    .navigation-link.active {
+      a {
+        color: $yellow;
+      }
+    }
+
+    .navigation-link.logo-link {
+      width: 150px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      .navigation-link {
+        display: inline-block;
+        padding: 0 7.5px;
+        vertical-align: middle;
+        
+        a {
+          font-size: 22px;          
+        }
+      }
+
+
+      .navigation-link.logo-link {
+        width: 100px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      .navigation-link {
+        padding: 0 15px;
+        a {
+          font-size: 32px;          
+        }
+      }
+
+
+      .navigation-link.logo-link {
+        width: 150px;
+      }
+    }
+
+  }
+}
