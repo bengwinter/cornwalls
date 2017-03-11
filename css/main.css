@@ -243,4 +243,44 @@ body {
   .events-section h5 {
     font-size: 35px; } }
 
+.contact-section {
+  text-align: center; }
+  .contact-section h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .contact-section .address h6, .contact-section .address a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+    display: block; }
+  .contact-section .address a {
+    margin-top: 15px;
+    font-weight: 100; }
+  @media (min-width: 768px) {
+    .contact-section h5 {
+      font-size: 25px;
+      margin-bottom: 25px; }
+    .contact-section .address h6, .contact-section .address a {
+      font-size: 22px; }
+    .contact-section .address a {
+      margin-top: 20px; } }
+  @media (min-width: 1100px) {
+    .contact-section h5 {
+      font-size: 30px; }
+    .contact-section .address h6, .contact-section .address a {
+      font-size: 28px; }
+    .contact-section .address a {
+      margin-top: 25px; } }
+
+.footer {
+  background: #E2A02D;
+  color: #000000;
+  padding: 10px 20px; }
+  .footer p {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 10px;
+    margin-right: 15px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,12 @@
+.footer {
+  background: $yellow;
+  color: $black;
+  padding: 10px 20px;
+
+  p {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 10px;
+    margin-right: 15px;
+  }
+}

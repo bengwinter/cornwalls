@@ -1,0 +1,54 @@
+.contact-section {
+  text-align: center;
+  h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .address {
+    h6, a {
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 300;
+      display: block;
+    }
+    a {
+      margin-top: 15px;
+      font-weight: 100;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    h5 {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+
+    .address {
+      h6, a {
+        font-size: 22px;
+      }
+
+      a {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    h5 {
+      font-size: 30px;
+    }
+
+    .address {
+      h6, a {
+        font-size: 28px;
+      }
+
+      a {
+        margin-top: 25px;
+      }
+    }
+  }
+}
