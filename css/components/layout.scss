@@ -9,6 +9,40 @@ body {
 
 }
 
+.main-section {
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 15px;
+
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 30px 0;
+    margin: 0 20px;
+
+    h3 {
+      font-size: 35px;
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 40px 0;
+    margin: 0 30px;
+
+    h3 {
+      font-size: 45px;
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0 auto;
+  }
+}
+
 .yellow-border-section {
   background: $yellow;
   width: 100%;
@@ -16,20 +50,15 @@ body {
 
   .white-background {
     background: $white;
-    margin: 0 15px;
-
-    @media (min-width: $breakpoint-tablet) {
-      margin: 0 20px;
-    }
-
-    @media (min-width: $breakpoint-desktop) {
-      margin: 0 30px;
-    }
-
   }
 
 
 }
 
+
+
+.clear-div {
+  clear: both;
+}
 
 

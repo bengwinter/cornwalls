@@ -1,5 +1,7 @@
 .navigation {
+  display: none;
   @media (min-width: $breakpoint-tablet) {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;

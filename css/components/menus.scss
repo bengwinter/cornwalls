@@ -1,16 +1,12 @@
 .menus-section {
   text-align: center;
-  padding: 20px 0;
 
-  h3, a {
+  a {
     text-transform: uppercase;
-
   }
 
   h3 {
     text-decoration: underline;
-    font-size: 30px;
-    font-weight: 300;
   } 
 
   a {
@@ -22,11 +18,6 @@
   }
 
   @media (min-width: $breakpoint-tablet) {
-    padding: 40px 0;
-
-    h3 {
-      font-size: 35px;
-    }
     a {
       font-size: 30px;
       margin-top: 20px;
@@ -34,9 +25,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    h3 {
-      font-size: 45px;
-    }
+
     a {
       font-size: 40px;
     }
