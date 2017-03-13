@@ -224,15 +224,17 @@ body {
   font-weight: 300;
   text-transform: uppercase; }
 .events-section .events-photos {
-  height: 375px;
   width: 100%;
   text-align: center;
   margin-top: 20px;
   display: flex; }
-  .events-section .events-photos #event-photo-one, .events-section .events-photos #event-photo-three {
-    width: 35%; }
+  .events-section .events-photos #event-photo-one {
+    flex: 0.409267735; }
   .events-section .events-photos #event-photo-two {
-    width: 25%; }
+    flex: 0.181374077;
+    padding: 0 10px; }
+  .events-section .events-photos #event-photo-three {
+    flex: 0.409358188; }
   .events-section .events-photos .event-photo img {
     width: 100%;
     height: auto; }
@@ -324,15 +326,23 @@ body {
     font-size: 10px;
     margin-right: 15px; }
 
-#contactForm .form-side {
-  width: 100%; }
-  @media (min-width: 768px) {
-    #contactForm .form-side {
-      width: 49%;
-      display: inline-block; } }
-#contactForm .form-group label, #contactForm .form-group input {
-  display: block; }
-#contactForm .form-group label {
-  text-transform: uppercase; }
+.contact-form .form-header {
+  text-align: center; }
+  .contact-form .form-header h3 {
+    display: inline-block; }
+.contact-form #contactForm {
+  text-align: center; }
+  .contact-form #contactForm .form-side {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .contact-form #contactForm .form-side {
+        width: 49%;
+        display: inline-block; } }
+  .contact-form #contactForm .form-group {
+    text-align: left; }
+    .contact-form #contactForm .form-group label, .contact-form #contactForm .form-group input {
+      display: block; }
+    .contact-form #contactForm .form-group label {
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

@@ -20,21 +20,26 @@
   }
 
   .events-photos {
-    height: 375px;
     width: 100%;
     text-align: center;
     margin-top: 20px;
     display: flex;
 
-    #event-photo-one, #event-photo-three {
-      width: 35%
+    #event-photo-one {
+      flex: 0.409267735;
     }
 
     #event-photo-two {
-      width: 25%;
+      flex: 0.181374077;
+      padding: 0 10px;
+    }
+
+    #event-photo-three {
+      flex: 0.409358188;
     }
 
     .event-photo {
+
       img {
         width: 100%;
         height: auto;

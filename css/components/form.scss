@@ -1,25 +1,41 @@
-#contactForm {
-  .form-side {
-    width: 100%;
-
-    @media (min-width: $breakpoint-tablet) {
-      width: 49%;
+.contact-form {
+  .form-header {
+    text-align: center;
+    h3 {
       display: inline-block;
     }
   }
 
-  .form-group {
-    label, input {
-      display: block;
+  #contactForm {
+    text-align: center;
+    
+    
+    
+    .form-side {
+      width: 100%;
+
+      @media (min-width: $breakpoint-tablet) {
+        width: 49%;
+        display: inline-block;
+      }
     }
 
-    label {
-      text-transform: uppercase;
-    }
+    .form-group {
+      text-align: left;
+      label, input {
+        display: block;
+      }
 
-    input {
+      label {
+        text-transform: uppercase;
+      }
 
+      input {
+
+      }
     }
+    
   }
-  
+
 }
+
