@@ -1,0 +1,25 @@
+#contactForm {
+  .form-side {
+    width: 100%;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 49%;
+      display: inline-block;
+    }
+  }
+
+  .form-group {
+    label, input {
+      display: block;
+    }
+
+    label {
+      text-transform: uppercase;
+    }
+
+    input {
+
+    }
+  }
+  
+}
