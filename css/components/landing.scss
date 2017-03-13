@@ -12,13 +12,15 @@
   h1 {
     font-size: 50px;
     color: $yellow;
+    display: none;
     @media (min-width: $breakpoint-tablet) {
       font-size: 60px;
+      display: block;
     }
     @media (min-width: $breakpoint-desktop) {
       font-size: 80px;
     }
-    
+
   }
   .landing-content {
     position: relative;

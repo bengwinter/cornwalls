@@ -56,53 +56,57 @@ body {
   .green-link:hover {
     color: #0C3A31; }
 
-.navigation {
-  display: none; }
-  @media (min-width: 768px) {
-    .navigation {
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #FFFFFF;
-      z-index: 100; } }
-  .navigation .navgiation-links {
-    padding: 0;
-    text-align: center;
-    margin: 15px auto; }
-    .navigation .navgiation-links .navigation-link a {
+@media (min-width: 768px) {
+  #navigation {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 100; } }
+#navigation .navgiation-links {
+  padding: 0;
+  text-align: center;
+  margin: 10px auto 5px auto; }
+  #navigation .navgiation-links .navigation-link {
+    display: none; }
+    #navigation .navgiation-links .navigation-link a {
       font-size: 25px;
       color: #000000;
       text-transform: uppercase;
       font-weight: 700;
       text-decoration: none; }
-      .navigation .navgiation-links .navigation-link a:hover {
+      #navigation .navgiation-links .navigation-link a:hover {
         color: #1A7A67; }
-    .navigation .navgiation-links .navigation-link.active a {
+    #navigation .navgiation-links .navigation-link a.active {
       color: #E2A02D; }
-    .navigation .navgiation-links .navigation-link.logo-link {
-      width: 150px; }
-      .navigation .navgiation-links .navigation-link.logo-link img {
-        width: 100%; }
-    @media (min-width: 768px) {
-      .navigation .navgiation-links .navigation-link {
+  #navigation .navgiation-links .navigation-link.logo-link {
+    display: block;
+    width: 100px;
+    margin: 0 auto; }
+    #navigation .navgiation-links .navigation-link.logo-link img {
+      width: 100%; }
+  @media (min-width: 768px) {
+    #navigation .navgiation-links {
+      margin: 15px auto; }
+      #navigation .navgiation-links .navigation-link {
         display: inline-block;
         padding: 0 7.5px;
         vertical-align: middle; }
-        .navigation .navgiation-links .navigation-link a {
+        #navigation .navgiation-links .navigation-link a {
           font-size: 22px; }
-      .navigation .navgiation-links .navigation-link.logo-link {
-        width: 100px; }
-        .navigation .navgiation-links .navigation-link.logo-link img {
+      #navigation .navgiation-links .navigation-link.logo-link {
+        width: 75px; }
+        #navigation .navgiation-links .navigation-link.logo-link img {
           width: 100%; } }
-    @media (min-width: 1100px) {
-      .navigation .navgiation-links .navigation-link {
-        padding: 0 15px; }
-        .navigation .navgiation-links .navigation-link a {
-          font-size: 32px; }
-      .navigation .navgiation-links .navigation-link.logo-link {
-        width: 150px; } }
+  @media (min-width: 1100px) {
+    #navigation .navgiation-links .navigation-link {
+      padding: 0 15px; }
+      #navigation .navgiation-links .navigation-link a {
+        font-size: 32px; }
+    #navigation .navgiation-links .navigation-link.logo-link {
+      width: 100px; } }
 
 .landing {
   text-align: center; }
@@ -114,10 +118,12 @@ body {
       margin-top: 190px; } }
   .landing h1 {
     font-size: 50px;
-    color: #E2A02D; }
+    color: #E2A02D;
+    display: none; }
     @media (min-width: 768px) {
       .landing h1 {
-        font-size: 60px; } }
+        font-size: 60px;
+        display: block; } }
     @media (min-width: 1100px) {
       .landing h1 {
         font-size: 80px; } }
@@ -214,6 +220,7 @@ body {
   font-size: 20px;
   font-weight: 300;
   max-width: 800px;
+  text-align: center;
   margin: 0 auto; }
   .events-section h4 span {
     cursor: pointer; }
@@ -226,13 +233,13 @@ body {
 .events-section .events-photos {
   width: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0;
   display: flex; }
   .events-section .events-photos #event-photo-one {
     flex: 0.409267735; }
   .events-section .events-photos #event-photo-two {
     flex: 0.181374077;
-    padding: 0 10px; }
+    padding: 0 5px; }
   .events-section .events-photos #event-photo-three {
     flex: 0.409358188; }
   .events-section .events-photos .event-photo img {
@@ -240,7 +247,7 @@ body {
     height: auto; }
   @media (min-width: 768px) {
     .events-section .events-photos {
-      margin-top: 40px; } }
+      margin: 40px 0; } }
 @media (min-width: 768px) {
   .events-section h4 {
     font-size: 25px; }

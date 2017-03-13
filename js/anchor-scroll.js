@@ -3,7 +3,7 @@
 
   var anchorScrolls = {
     ANCHOR_REGEX: /^#[^ ]+$/,
-    OFFSET_HEIGHT_PX: $('.navigation').height(),
+    OFFSET_HEIGHT_PX: $('#navigation').height(),
 
     /**
      * Establish events, and fix initial scroll position if a hash is provided.

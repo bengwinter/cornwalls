@@ -12,5 +12,4 @@ $(document).ready(function(){
     // $(targetIcons).toggleClass('hide-icon');
     // $(targetAnswer).toggleClass('answer-open');
   });
-
 });

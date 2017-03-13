@@ -1,5 +1,5 @@
-.navigation {
-  display: none;
+#navigation {
+  
   @media (min-width: $breakpoint-tablet) {
     display: block;
     position: fixed;
@@ -13,9 +13,11 @@
   .navgiation-links {
     padding: 0;
     text-align: center;
-    margin: 15px auto;
+    margin: 10px auto 5px auto;
 
     .navigation-link {
+      display: none;
+
       a {
         font-size: 25px;
         color: $black;
@@ -27,16 +29,16 @@
           color: $green;
         }
       }
-    }
 
-    .navigation-link.active {
-      a {
+      a.active {
         color: $yellow;
       }
     }
 
     .navigation-link.logo-link {
-      width: 150px;
+      display: block;
+      width: 100px;
+      margin: 0 auto;
 
       img {
         width: 100%;
@@ -44,6 +46,8 @@
     }
 
     @media (min-width: $breakpoint-tablet) {
+      margin: 15px auto;
+
       .navigation-link {
         display: inline-block;
         padding: 0 7.5px;
@@ -56,7 +60,7 @@
 
 
       .navigation-link.logo-link {
-        width: 100px;
+        width: 75px;
 
         img {
           width: 100%;
@@ -74,7 +78,7 @@
 
 
       .navigation-link.logo-link {
-        width: 150px;
+        width: 100px;
       }
     }
 
