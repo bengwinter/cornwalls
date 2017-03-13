@@ -1,0 +1,8 @@
+.green-link {
+  cursor: pointer;
+  color: $green;
+  text-decoration: none;
+  &:hover {
+    color: $dark-green;
+  }
+}

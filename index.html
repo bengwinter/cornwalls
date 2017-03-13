@@ -10,8 +10,9 @@
 
     <title>Cornwall's</title>
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" ></script>
+    <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js" type="text/javascript" ></script>
+    <script src="http://maps.googleapis.com/maps/api/js" type="text/javascript" ></script>
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -47,29 +48,29 @@
     <div class="navigation">
       <ul class="navgiation-links">
         <li class="navigation-link">
-          <a href="home">Home</a>
+          <a class="anchor-link" href="#home">Home</a>
         </li>
         <li class="navigation-link">
-          <a href="menu">Menu</a>
+          <a class="anchor-link" href="#menus">Menu</a>
         </li>
         <li class="navigation-link">
-          <a href="our-team">Our Team</a>
+          <a class="anchor-link" href="#our-team">Our Team</a>
         </li>
         <li class="navigation-link logo-link">
           <img src="./img/logo/cornwalls.svg" alt="Cornwall's Logo"/>
         </li>
         <li class="navigation-link">
-          <a href="hours">Hours</a>
+          <a class="anchor-link" href="#hours">Hours</a>
         </li>
         <li class="navigation-link">
-          <a href="events">Events</a>
+          <a class="anchor-link" href="#events">Events</a>
         </li>
         <li class="navigation-link">
-          <a href="contact">Contact</a>
+          <a class="anchor-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
-    <div class="landing">
+    <div class="landing" id="home" href="#home">
       <h1>Cornwall's</h1>
       <div class="landing-content">
         <img class="landing-image" src="./img/landing/landing.jpg" alt="Landing Image of Team"/>
@@ -80,18 +81,20 @@
       </div>
     </div>
     <div class="yellow-border-section">
-      <div class="menus-section white-background main-section">
+      <div class="menus-section white-background main-section" id="menus" href="#menus">
         <h3>Menus</h3>
         <div class="menu-links">
           <a class="menu-link yellow-text" href="#" target="_blank">Lunch</a>
+          </br>
           <a class="menu-link green-text" href="#" target="_blank">Dinner</a>
+          </br>
           <a class="menu-link red-text" href="#" target="_blank">Beer, Wine, Spirits</a>
         </div>
         <div class="menu-photos">
           <img src="./img/menus/one.jpg" alt="picture of a hamburger"/><img src="./img/menus/two.jpg" alt="picture of a beer"/><img src="./img/menus/three.jpg" alt="picture of a appetizers"/>
         </div>
       </div>
-      <div class="team-section white-background main-section">
+      <div class="team-section white-background main-section" id="our-team" href="#our-team">
         <div class="team-photo"> 
           <img src="./img/team/team.jpg" alt="Photograph of the Cornwall's team"/>
         </div>
@@ -99,7 +102,7 @@
           <p>(Billy Need Content) Bacon ipsum dolor amet filet mignon hamburger strip steak fugiat kielbasa in minim. Aliqua venison laborum, ad kielbasa jowl brisket prosciutto. Non beef ribs velit dolore. Labore kevin dolore pariatur ut, deserunt et dolore sint shankle. Cupim pork loin landjaeger capicola kielbasa prosciutto sint irure quis leberkas sunt sirloin.</p>
         </div>
       </div>
-      <div class="hours-section white-background main-section">
+      <div class="hours-section white-background main-section" id="hours" href="#hours">
         <h3>Hours</h3>
         <div class="regular-hours-section">
           <h4><span class="green-text">OPEN</span> today from 4pm-2am</h4>
@@ -119,22 +122,28 @@
           <h4>Kitchen <span class="red-text">closes</span> at midnight</h4>
         </div>
       </div>
-      <div class="events-section white-background main-section">
+      <div class="events-section white-background main-section" id="events" href="#events">
         <h4>Cornwall’s has three pool tables, darts, two rooms, an outdoor seating area, and space to accomadate 160 people. To host your next event at Cornwall’s, <span class="green-text event-form-button">please fill out this form</span></h4>
         <div class="events-photos">
           <img src="./img/events/one.jpg" alt="picture of a billiards"/>
           <img src="./img/events/two.jpg" alt="picture of a bartender pouring drink"/>
           <img src="./img/events/three.jpg" alt="picture of people talking"/>
         </div>
-        <h5 class="green-text" id="more-photos">More Photos</h5>
+        <h5 class="green-text green-link" id="more-photos">More Photos</h5>
       </div>
-      <div class="contact-section white-background main-section">
-        <h5 class="green-text">To host an event at Cornwall's <span class="event-form-button">click here</span></h5>
-        <div class="address">
-          <h6>Cornwall’s is located at</h6>
-          <h6 class="green-text">654 Beacon Street</h6>
-          <h6 class="green-text">Boston, MA 02215</h6>
-          <a>(617) 262-3749</a>
+      <div class="contact-section white-background main-section" id="contact" href="#contact">
+        <h5 class="green-text">To host an event at Cornwall's <span class="event-form-button green-link">click here</span></h5>
+        <h6>Cornwall’s is located at</h6>
+        <div class="address">          
+          <a href="https://goo.gl/maps/wUQ1Jaj9XE32" class="green-link" target="_blank">
+            <h6 class="green-text">654 Beacon Street</br>Boston, MA 02215</h6>
+          </a>
+        </div>
+        <div class="telephone-link">
+          <a href="tel:1-617-262-3749">(617)-262-3749</a>
+        </div>
+        <div class="map-container">
+          <div id="goog-map"></div>
         </div>
       </div>
     </div>
@@ -143,8 +152,20 @@
       <p class="footer-link">Privacy Policy</p>
       <p class="footer-link">Terms of Service</p>
     </div>
+
+
+
+    <!-- Javascript
+    ================================================== -->
+    <script src="./js/map.js" type="text/javascript"></script>
+    <script src="./js/anchor-click.js" type="text/javascript"></script>
+    <script src="./js/anchor-scroll.js" type="text/javascript"></script>
+
+    <!-- /Javascript
+    ================================================== -->
   </body>
 </html>
+
 
 
 

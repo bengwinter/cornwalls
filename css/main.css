@@ -49,6 +49,13 @@ body {
 .clear-div {
   clear: both; }
 
+.green-link {
+  cursor: pointer;
+  color: #1A7A67;
+  text-decoration: none; }
+  .green-link:hover {
+    color: #0C3A31; }
+
 .navigation {
   display: none; }
   @media (min-width: 768px) {
@@ -145,7 +152,7 @@ body {
     text-decoration: none;
     font-size: 25px;
     font-weight: 500;
-    display: block;
+    display: inline-block;
     margin-top: 15px; }
   @media (min-width: 768px) {
     .menus-section a {
@@ -249,29 +256,63 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 15px; }
-  .contact-section .address h6, .contact-section .address a {
+  .contact-section h6 {
     font-size: 18px;
-    text-decoration: none;
-    font-weight: 300;
-    display: block; }
-  .contact-section .address a {
-    margin-top: 15px;
-    font-weight: 100; }
+    font-weight: 700; }
+  .contact-section .address {
+    text-decoration: none; }
+    .contact-section .address h6 {
+      font-size: 18px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 300; }
+      .contact-section .address h6:first-child {
+        margin-top: 10px; }
+  .contact-section .telephone-link {
+    margin-top: 20px; }
+    .contact-section .telephone-link a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #000000;
+      margin-top: 15px;
+      font-weight: 100; }
+  .contact-section .map-container {
+    height: 350px;
+    margin-top: 35px; }
+  .contact-section .map-container {
+    width: 80%;
+    margin: 0 10%;
+    height: 300px;
+    margin-top: 25px; }
+    .contact-section .map-container #goog-map {
+      width: 100%;
+      height: 100%; }
   @media (min-width: 768px) {
     .contact-section h5 {
       font-size: 25px;
       margin-bottom: 25px; }
-    .contact-section .address h6, .contact-section .address a {
-      font-size: 22px; }
-    .contact-section .address a {
-      margin-top: 20px; } }
+    .contact-section h6 {
+      font-size: 24px; }
+    .contact-section .address h6 {
+      font-size: 24px; }
+    .contact-section .telephone-link {
+      margin-top: 25px; }
+      .contact-section .telephone-link a {
+        font-size: 20px; }
+    .contact-section .map-container {
+      height: 350px;
+      margin-top: 35px; } }
   @media (min-width: 1100px) {
     .contact-section h5 {
       font-size: 30px; }
-    .contact-section .address h6, .contact-section .address a {
+    .contact-section h6 {
       font-size: 28px; }
-    .contact-section .address a {
-      margin-top: 25px; } }
+    .contact-section .address h6 {
+      font-size: 26px; }
+    .contact-section .telephone-link a {
+      font-size: 22px; }
+    .contact-section .map-container {
+      height: 400px; } }
 
 .footer {
   background: #E2A02D;
