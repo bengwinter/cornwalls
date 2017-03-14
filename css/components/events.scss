@@ -23,6 +23,7 @@
   }
 
   .event-image-slider {
+    margin-top: 20px;
     .slick-slide {
       pointer-events: none;
     }
@@ -52,6 +53,7 @@
     }
 
     @media (min-width: $breakpoint-tablet) {
+      margin-top: 40px;
       .slick-prev {
         left: 50px;
       }
