@@ -1,15 +1,26 @@
 'use strict'
 
 $(document).ready(function(){
-  $(document).on('click', '.open-close-faq', function(event){
-    event.preventDefault();
+    var form = $('#contactForm');
+    form.find('button').click(function(e) {
+      e.preventDefault();
+      // e.stopPropagation();
 
-    // var targetQuestion = this.closest('.question');
+      var formData = form.serialize();
+      $.post('http://thebigflamingo.com/contact/send', formData, function(response) { 
+        console.log(response); 
 
-    // var targetIcons = $(targetQuestion).find('.icon');
-    // var targetAnswer = $(targetQuestion).find('.answer');
+      $('#confirmation-holder').fadeIn(500);
 
-    // $(targetIcons).toggleClass('hide-icon');
-    // $(targetAnswer).toggleClass('answer-open');
-  });
+      setTimeout(function(){
+        $('#contactForm').find("input[type=text], input[type=email], textarea").val("");
+        $('#confirmation-holder').fadeOut(500);
+      }, 2500);
+
+        setTimeout(function () {
+        if ($('#contact').is(":visible")) {
+          
+        }, 3000);
+      });
+    });
 });

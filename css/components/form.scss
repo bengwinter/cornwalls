@@ -1,6 +1,7 @@
 .contact-form {
   .form-header {
     text-align: center;
+    margin-bottom: 20px;
     h3 {
       display: inline-block;
     }
@@ -9,30 +10,140 @@
   #contactForm {
     text-align: center;
     
-    
-    
     .form-side {
       width: 100%;
 
       @media (min-width: $breakpoint-tablet) {
-        width: 49%;
+        width: 45%;
         display: inline-block;
+
+        &:first-child {
+          text-align: right;
+        }
+
+        &:last-child {
+          text-align: left;
+        }
       }
     }
 
     .form-group {
       text-align: left;
-      label, input {
-        display: block;
+      
+      width: 90%;
+      margin: 0 auto;
+
+      @media (min-width: $breakpoint-tablet) {
+        width: 100%;
       }
 
       label {
         text-transform: uppercase;
+        display: block;
+        margin-bottom: 2px;
+        font-size: 12px;
+        margin-top: 10px;
+
+        @media (min-width: $breakpoint-tablet) {
+          font-size: 14px;
+        }
       }
 
-      input {
+      textarea, input[type] {
+        border-radius: 3px;
+        border: 1px solid $black;
+        font-size: 14px;
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+
+        @media (min-width: $breakpoint-desktop) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .event-date-time {
+      @media (min-width: $breakpoint-tablet) {
+        .form-group {  
+          display: inline-block;
+          margin-right: 2%;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        .form-date {
+          width: 44%;
+        }
+
+        .form-time {
+          width: 25%;
+        }
+      }
+    }
+
+    .event-type {
+      @media (min-width: $breakpoint-tablet) {
+        .form-group {  
+          display: inline-block;
+          width: 48%;
+          
+          &:first-child {
+            margin-right: 2%;
+          }
+            
+        }
+      }
+
+    }
+
+    .form-message {
+      width: 90%;
+      margin-bottom: 20px;
+
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 100px;
+      }
+
+      @media (min-width: $breakpoint-tablet) {
+        margin: 20px auto;
+      }
+
+    }
+
+    #contact-button {
+      text-transform: uppercase;
+      color: $white;
+      background: $yellow;
+      transition: background 1s ease;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 30px;
+
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 24px;
+      }
+
+      &:hover {
+        background: $dark-yellow;
 
       }
+    }
+
+    #contact-button.disabled {
+      opacity: .5;
+    }
+
+    #confirmation {
+      text-align: center;
+      z-index: 800;
+      width: 100%;
+      display: none;
     }
     
   }
