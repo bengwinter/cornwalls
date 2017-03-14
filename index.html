@@ -177,11 +177,11 @@
         </div>
         <form id="contactForm" action="POST" method="send">
           <div id="contact-form-inputs">
-            <div class="form-side">
+            <div class="form-side left-side">
               <div class="form-group">
-                <div class="errorMessage"></div>
-                <label for="contactName">Full Name*</label>
+                <label for="contactName">Full Name<span class="red-text">*</span></label>
                 <input type="text"  name="data[Name]" id="contactName" placeholder="" required/>
+                <div class="errorMessage"></div>
               </div>
               <div class="form-group">
                 <label for="contactCompany">Company</label>
@@ -194,24 +194,24 @@
                 </div>
                 <div class="form-group form-time">
                   <label for="contactStartTime">Start</label>
-                  <input type="time" name="data[StartTime]" id="contactStartTime" placeholder=""/>
+                  <input type="text" name="data[StartTime]" id="contactStartTime" placeholder=""/>
                 </div>
                 <div class="form-group form-time">
                   <label for="contactEndTime">End</label>
-                  <input type="time" name="data[EndTime]" id="contactEndTime" placeholder=""/>
+                  <input type="text" name="data[EndTime]" id="contactEndTime" placeholder=""/>
                 </div>
               </div>
             </div>
-            <div class="form-side">
+            <div class="form-side right-side">
               <div class="form-group">
+                <label for="contactPhone">Phone Number<span class="red-text">*</span></label>
+                <input type="phone"  name="data[Phone]" id="contactPhone" placeholder="" required>
                 <div class="errorMessage"></div>
-                <label for="contactPhone">Phone Number*</label>
-                <input type="text"  name="data[Phone]" id="contactPhone" placeholder="" required>
               </div>
               <div class="form-group">
-                <div class="errorMessage"></div>
-                <label for="contactEmail">Email*</label>
+                <label for="contactEmail">Email<span class="red-text">*</span></label>
                 <input type="email" name="from"  id="contactEmail" placeholder="" required>
+                <div class="errorMessage"></div>
               </div>
               <div class="form-line event-type">
                 <div class="form-group">

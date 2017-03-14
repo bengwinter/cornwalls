@@ -35,10 +35,10 @@ $(document).ready(function() {
                         }
                     }
                 },
-                message: {
+                phone: {
                     validators: {
                         notEmpty: {
-                            message: 'Please let us know why you are reaching out'
+                            message: 'Please provide a contact number'
                         }
                     }
                 }

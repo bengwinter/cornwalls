@@ -354,17 +354,20 @@ body {
   .contact-form .form-header h3 {
     display: inline-block; }
 .contact-form #contactForm {
-  text-align: center; }
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto; }
   .contact-form #contactForm .form-side {
     width: 100%; }
     @media (min-width: 768px) {
       .contact-form #contactForm .form-side {
         width: 45%;
-        display: inline-block; }
-        .contact-form #contactForm .form-side:first-child {
-          text-align: right; }
-        .contact-form #contactForm .form-side:last-child {
-          text-align: left; } }
+        display: inline-block; } }
+  @media (min-width: 768px) {
+    .contact-form #contactForm .form-side.left-side {
+      padding-right: 1%; }
+    .contact-form #contactForm .form-side.right-side {
+      padding-left: 1%; } }
   .contact-form #contactForm .form-group {
     text-align: left;
     width: 90%;
@@ -377,7 +380,7 @@ body {
       display: block;
       margin-bottom: 2px;
       font-size: 12px;
-      margin-top: 10px; }
+      margin-top: 20px; }
       @media (min-width: 768px) {
         .contact-form #contactForm .form-group label {
           font-size: 14px; } }
@@ -385,12 +388,12 @@ body {
       border-radius: 3px;
       border: 1px solid #000000;
       font-size: 14px;
-      padding: 5px;
+      padding: 10px 5px;
       width: 100%;
       box-sizing: border-box; }
       @media (min-width: 1100px) {
         .contact-form #contactForm .form-group textarea, .contact-form #contactForm .form-group input[type] {
-          font-size: 20px; } }
+          font-size: 16px; } }
   @media (min-width: 768px) {
     .contact-form #contactForm .event-date-time .form-group {
       display: inline-block;
@@ -399,6 +402,12 @@ body {
         margin-right: 0; }
     .contact-form #contactForm .event-date-time .form-date {
       width: 44%; }
+      .contact-form #contactForm .event-date-time .form-date input {
+        height: 39px; } }
+    @media (min-width: 768px) and (min-width: 768px) {
+      .contact-form #contactForm .event-date-time .form-date input {
+        height: 41px; } }
+  @media (min-width: 768px) {
     .contact-form #contactForm .event-date-time .form-time {
       width: 25%; } }
   @media (min-width: 768px) {
@@ -406,7 +415,7 @@ body {
       display: inline-block;
       width: 48%; }
       .contact-form #contactForm .event-type .form-group:first-child {
-        margin-right: 2%; } }
+        margin-right: 3%; } }
   .contact-form #contactForm .form-message {
     width: 90%;
     margin-bottom: 20px; }
@@ -416,7 +425,11 @@ body {
       min-height: 100px; }
     @media (min-width: 768px) {
       .contact-form #contactForm .form-message {
-        margin: 20px auto; } }
+        margin: 20px auto;
+        width: 92%; } }
+  .contact-form #contactForm .errorMessage {
+    position: absolute;
+    color: #BE1818; }
   .contact-form #contactForm #contact-button {
     text-transform: uppercase;
     color: #FFFFFF;
