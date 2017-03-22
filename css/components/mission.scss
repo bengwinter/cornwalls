@@ -1,0 +1,20 @@
+.mission-section  {
+  .mission-statement {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    margin-top: 25px;
+    p {
+      font-size: 17.5px;
+
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 20px;
+      }
+
+      @media (min-width: $breakpoint-desktop) {
+        font-size: 22.5px;
+      }
+    }
+  }  
+}

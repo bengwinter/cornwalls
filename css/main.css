@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Scheherazade");
-@import url("https://fonts.googleapis.com/css?family=Lateef");
 @import url("https://fonts.googleapis.com/css?family=Amiri");
-@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro");
-@import url("https://fonts.googleapis.com/css?family=Poly");
 .green-text {
   color: #1A7A67; }
 
@@ -125,7 +121,8 @@ body {
   .landing h1 {
     font-size: 50px;
     color: #E2A02D;
-    display: none; }
+    display: none;
+    font-family: 'Amiri', serif; }
     @media (min-width: 768px) {
       .landing h1 {
         font-size: 60px;
@@ -153,6 +150,21 @@ body {
         @media (min-width: 1100px) {
           .landing .landing-content .landing-hours h4 {
             font-size: 35px; } }
+
+.mission-section .mission-statement {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  margin-top: 25px; }
+  .mission-section .mission-statement p {
+    font-size: 17.5px; }
+    @media (min-width: 768px) {
+      .mission-section .mission-statement p {
+        font-size: 20px; } }
+    @media (min-width: 1100px) {
+      .mission-section .mission-statement p {
+        font-size: 22.5px; } }
 
 .menus-section {
   text-align: center; }
@@ -456,23 +468,5 @@ body {
     z-index: 800;
     width: 100%;
     display: none; }
-
-.test-poly {
-  font-family: 'Poly', serif; }
-
-.test-lateef {
-  font-family: 'Lateef', cursive; }
-
-.test-amiri {
-  font-family: 'Amiri', serif; }
-
-.test-source-serif {
-  font-family: 'Source Serif Pro', serif; }
-
-.test-scheherazade {
-  font-family: 'Scheherazade', serif; }
-
-.test-image {
-  width: 450px; }
 
 /*# sourceMappingURL=main.css.map */
