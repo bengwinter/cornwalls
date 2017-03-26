@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.event-image-slider').slick({
+  $('.cornwalls-image-slider').slick({
     infinite: true,
     dots: false,
     slidesToShow: 3,
