@@ -29,9 +29,12 @@ var Cornwalls = {
 
     var dailyBarTimes = ["12pm-2am","closed","12pm-2am","12pm-2am","12pm-2am","12pm-2am","12pm-2am"];
     var dailyKitchenCloseTime = ["midnight","midnight","midnight","midnight","midnight","midnight","midnight"];
-    var specialDateTimes = {"01-01-2017": {"kitchen": "11PM", "bar": "4am-2am"}};
+
+    //do not add 0 for month
+    var specialDateTimes = {"1-01-2017": {"kitchen": "11PM", "bar": "4am-2am"}};
+    
     var today = new Date();
-    var specialDateCheck = today.getMonth() + '-' + today.getDate() + "-" + today.getFullYear();
+    var specialDateCheck = (today.getMonth() + 1) + '-' + today.getDate() + "-" + today.getFullYear();
 
 
     
@@ -39,8 +42,8 @@ var Cornwalls = {
       $('.daily-time').text(dailyBarTimes[today.getDay()]);
       $('.kitchen-daily-time').text(dailyKitchenCloseTime[today.getDay()]);      
     } else {
-      $('.daily-time').text(specialDateTimes[specialDateCheck["bar"]]);
-      $('.kitchen-daily-time').text(specialDateTimes[specialDateCheck["kitchen"]]);
+      $('.daily-time').text(specialDateTimes[specialDateCheck]["bar"]);
+      $('.kitchen-daily-time').text(specialDateTimes[specialDateCheck]["kitchen"]);
     }
 
   }
