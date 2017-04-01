@@ -222,17 +222,26 @@ body {
     margin-top: 25px; }
     .hours-section .regular-hours-section h4 {
       font-size: 20px;
-      font-weight: 300; }
+      font-weight: 300;
+      line-height: 1.3; }
+    .hours-section .regular-hours-section h5 {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.3; }
   @media (min-width: 768px) {
     .hours-section .regular-hours-section {
       margin-top: 30px; }
       .hours-section .regular-hours-section h4 {
-        font-size: 30px; } }
+        font-size: 30px; }
+      .hours-section .regular-hours-section h5 {
+        font-size: 26px; } }
   @media (min-width: 1100px) {
     .hours-section .regular-hours-section {
       margin-top: 35px; }
       .hours-section .regular-hours-section h4 {
-        font-size: 30px; } }
+        font-size: 30px; }
+      .hours-section .regular-hours-section h5 {
+        font-size: 26px; } }
 
 .cornwalls-image-slider {
   margin-top: 20px; }
