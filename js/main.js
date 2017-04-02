@@ -14,7 +14,7 @@ var Cornwalls = {
 
   sendContactForm: function() {
     var form = $('#contactForm');
-    console.log("HI");
+
     form.find('button').click(function(e) {
         e.preventDefault();
         // e.stopPropagation();
