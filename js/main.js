@@ -3,7 +3,37 @@
 var Cornwalls = {
 
   showContactForm: function() {
+    $('.event-form-button').click(function(e){
+      e.preventDefault();
+      $("#event-contact-form").show();
+      $('html, body').animate({
+        scrollTop: $("#event-contact-form").offset().top
+      }, 1000);
+    });
+  },  
 
+  sendContactForm: function() {
+    var form = $('#contactForm');
+    console.log("HI");
+    form.find('button').click(function(e) {
+        e.preventDefault();
+        // e.stopPropagation();
+
+        var formData = form.serialize();
+        $.post('http://thebigflamingo.com/contact/send', formData, function(response) { 
+          console.log(response); 
+
+        $('#confirmation').fadeIn(500);
+
+        setTimeout(function(){
+          $('#contactForm').find("input[type=text], input[type=phone], input[type=integer], input[type=date], input[type=email], textarea").val("");
+        }, 1500);
+
+         setTimeout(function(){
+          $('#confirmation').fadeOut(500);
+        }, 2500);
+      });
+    });
   },
 
   getDailyTimes: function() {
@@ -37,31 +67,9 @@ var Cornwalls = {
 $(document).ready(function(){
   Cornwalls.getDailyTimes();
   Cornwalls.showContactForm();
+  Cornwalls.sendContactForm();
+
   
-
-  // var form = $('#contactForm');
-  // form.find('button').click(function(e) {
-  //     e.preventDefault();
-  //     // e.stopPropagation();
-
-  //     var formData = form.serialize();
-  //     $.post('http://thebigflamingo.com/contact/send', formData, function(response) { 
-  //       console.log(response); 
-
-  //     $('#confirmation-holder').fadeIn(500);
-
-  //     setTimeout(function(){
-  //       $('#contactForm').find("input[type=text], input[type=email], textarea").val("");
-  //       $('#confirmation-holder').fadeOut(500);
-  //     }, 2500);
-
-  //       setTimeout(function () {
-  //       if ($('#contact').is(":visible")) {
-          
-  //       }, 3000);
-  //     });
-  //   });
-  // };
 
 });
 
