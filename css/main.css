@@ -220,6 +220,9 @@ body {
   text-align: center; }
   .hours-section .regular-hours-section {
     margin-top: 25px; }
+    .hours-section .regular-hours-section h3 {
+      font-size: 24px;
+      font-weight: 700; }
     .hours-section .regular-hours-section h4 {
       font-size: 20px;
       font-weight: 300;
@@ -231,6 +234,8 @@ body {
   @media (min-width: 768px) {
     .hours-section .regular-hours-section {
       margin-top: 30px; }
+      .hours-section .regular-hours-section h3 {
+        font-size: 34px; }
       .hours-section .regular-hours-section h4 {
         font-size: 30px; }
       .hours-section .regular-hours-section h5 {
