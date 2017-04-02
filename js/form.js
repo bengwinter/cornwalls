@@ -19,6 +19,7 @@ $(document).ready(function() {
             },
             fields: {
                 name: {
+                    row: '.name-form-group',
                     validators: {
                         notEmpty: {
                             message: 'First and last name, please'
@@ -26,6 +27,7 @@ $(document).ready(function() {
                     }
                 },
                 email: {
+                    row: '.email-form-group',
                     validators: {
                         notEmpty: {
                             message: 'Your email address is required, please'
@@ -36,6 +38,7 @@ $(document).ready(function() {
                     }
                 },
                 phone: {
+                    row: '.phone-form-group',
                     validators: {
                         notEmpty: {
                             message: 'Please provide a contact number'
@@ -65,7 +68,7 @@ $(document).ready(function() {
 
             if ((data.fv.getFieldElements('name').val() === "") || 
     (data.fv.getFieldElements('email').val() === "") || 
-    (data.fv.getFieldElements('message').val() === "")) {
+    (data.fv.getFieldElements('phone').val() === "")) {
                 data.fv.disableSubmitButtons(true);    
             }
         })
