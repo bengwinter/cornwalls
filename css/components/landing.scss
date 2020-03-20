@@ -31,6 +31,28 @@
       width: 100%;
     }
 
+    .gift-card-btn {
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 30px;
+      color: $white;
+      background: $green;
+      transition: background 1s ease;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 30px;
+
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 24px;
+      }
+
+      &:hover {
+        background: $dark-green;
+
+      }
+    }
+
     .landing-hours {
       background: $yellow;
       margin-top: -5px;
