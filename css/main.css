@@ -137,7 +137,6 @@ body {
     .landing .landing-content .takeout-btn, .landing .landing-content .table-order-btn {
       text-transform: uppercase;
       display: inline-block;
-      margin-top: 30px;
       color: #FFFFFF;
       text-decoration: none;
       transition: background 1s ease;
@@ -149,10 +148,12 @@ body {
         .landing .landing-content .takeout-btn, .landing .landing-content .table-order-btn {
           font-size: 24px; } }
     .landing .landing-content .takeout-btn {
-      background: #1A7A67; }
+      background: #1A7A67;
+      margin-top: 30px; }
       .landing .landing-content .takeout-btn:hover {
         background: #0C3A31; }
     .landing .landing-content .table-order-btn {
+      margin-top: 10px;
       background: #E2A02D; }
       .landing .landing-content .table-order-btn:hover {
         background: #C88E28; }
