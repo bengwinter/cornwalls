@@ -31,12 +31,13 @@
       width: 100%;
     }
 
-    .gift-card-btn {
+    .takeout-btn, .table-order-btn {
       text-transform: uppercase;
       display: inline-block;
       margin-top: 30px;
       color: $white;
-      background: $green;
+      
+      text-decoration: none;
       transition: background 1s ease;
       font-size: 18px;
       border: none;
@@ -46,12 +47,28 @@
       @media (min-width: $breakpoint-tablet) {
         font-size: 24px;
       }
+    }
 
+    .takeout-btn {
+      background: $green;
+      
       &:hover {
         background: $dark-green;
 
       }
     }
+
+    .table-order-btn  {
+      background: $yellow;
+
+      &:hover {
+        background: $dark-yellow;
+
+      }
+    }
+
+    
+
 
     .landing-hours {
       background: $yellow;
