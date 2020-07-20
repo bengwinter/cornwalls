@@ -151,12 +151,14 @@ body {
           font-size: 24px; } }
     .landing .landing-content .takeout-btn {
       background: #1A7A67;
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 5px; }
       .landing .landing-content .takeout-btn:hover {
         background: #0C3A31; }
     .landing .landing-content .table-order-btn {
       margin-bottom: 25px;
-      background: #E2A02D; }
+      background: #E2A02D;
+      margin-top: 10px; }
       .landing .landing-content .table-order-btn:hover {
         background: #C88E28; }
     .landing .landing-content .landing-hours {

@@ -52,6 +52,7 @@
     .takeout-btn {
       background: $green;
       margin-top: 0;
+      margin-bottom: 5px;
 
       &:hover {
         background: $dark-green;
@@ -62,6 +63,7 @@
     .table-order-btn  {
       margin-bottom: 25px;
       background: $yellow;
+      margin-top: 10px;
 
       &:hover {
         background: $dark-yellow;
