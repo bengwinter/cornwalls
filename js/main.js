@@ -39,7 +39,7 @@ var Cornwalls = {
   getDailyTimes: function() {
 
     //times go [sunday, monday, tuesday, wednesday, thursday, friday, saturday ]
-    var dailyBarTimes = ["Cornwall's is closed today", "Cornwall's is closed today", "Open today from 8am-10pm", "Open today from 8am-10pm", "Open today from 8am-10pm", "Open today from 8am-10pm", "Open today from 8am-10pm"];
+    var dailyBarTimes = ["Cornwall's is closed today", "Open today from 8am-10pm", "Open today from 8am-10pm", "Open today from 8am-10pm", "Open today from 8am-11pm", "Open today from 8am-11pm", "Open today from 8am-11pm"];
     // var dailyKitchenCloseTime = ["11PM (if there is a Fenway event)","11PM","11PM","11PM","11PM","11PM","11PM"];
 
     //do not add 0 for month

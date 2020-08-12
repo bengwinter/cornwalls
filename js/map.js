@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 
           // The latitude and longitude to center the map (always required)
-          center: new google.maps.LatLng(42.3493521,-71.0958689),
+          center: new google.maps.LatLng(42.349587, -71.095699),
 
           // How you would like to style the map. 
           // This is where you would paste any style found on Snazzy Maps.
@@ -32,7 +32,7 @@ $(document).ready(function(){
 
       // Let's also add a marker while we're at it
       var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(42.3493521,-71.0958689),
+          position: new google.maps.LatLng(42.349587, -71.095699),
           map: map,
           title: "Cornwall's"
       });
