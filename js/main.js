@@ -49,7 +49,7 @@ var Cornwalls = {
     // var specialDateCheck = (today.getMonth() + 1) + '-' + today.getDate() + "-" + today.getFullYear();
     
     // if (specialDateTimes[specialDateCheck] === undefined) {
-      $('.daily-time').text(dailyBarTimes[today.getDay()]);
+      // $('.daily-time').text(dailyBarTimes[today.getDay()]);
       // $('.kitchen-daily-time').text(dailyKitchenCloseTime[today.getDay()]); 
       // if(today.getDay() === 6) {
       //   $('.kitchen-daily-time').text("is");
